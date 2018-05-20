@@ -3,19 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="30dp"
-    android:layout_marginBottom="20dp"
-    android:layout_marginEnd="20dp"
-    android:layout_marginRight="20dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginLeft="20dp"
+    android:layout_margin="14dp"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:id="@+id/swipeContainer">
+    android:id="@+id/swipe_container">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/forumsPager"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent">
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+    </android.support.v4.view.ViewPager>
 
 </android.support.v4.widget.SwipeRefreshLayout>
